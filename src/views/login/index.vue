@@ -4,8 +4,8 @@
 			<div class="login-left-logo">
 				<img :src="logoMini" />
 				<div class="login-left-logo-text">
-					<span>{{ getThemeConfig.globalViceTitle }}</span>
-					<span class="login-left-logo-text-msg">{{ getThemeConfig.globalViceTitleMsg }}</span>
+					<span>222</span>
+					<span class="login-left-logo-text-msg">333</span>
 				</div>
 			</div>
 			<div class="login-left-img">
@@ -18,14 +18,14 @@
 				<span class="login-right-warp-one"></span>
 				<span class="login-right-warp-two"></span>
 				<div class="login-right-warp-mian">
-					<div class="login-right-warp-main-title">{{ getThemeConfig.globalTitle }} 欢迎您！</div>
+					<div class="login-right-warp-main-title">444 欢迎您！</div>
 					<div class="login-right-warp-main-form">
 						<div v-if="!state.isScan">
 							<el-tabs v-model="state.tabsActiveName">
-								<el-tab-pane :label="$t('message.label.one1')" name="account">
+								<el-tab-pane label="0000001" name="account">
 									<Account />
 								</el-tab-pane>
-								<el-tab-pane :label="$t('message.label.two2')" name="mobile">
+								<el-tab-pane label="0000002" name="mobile">
 									<Mobile />
 								</el-tab-pane>
 							</el-tabs>

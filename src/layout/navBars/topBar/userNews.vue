@@ -1,8 +1,8 @@
 <template>
 	<div class="layout-navbars-breadcrumb-user-news">
 		<div class="head-box">
-			<div class="head-box-title">{{ $t('message.user.newTitle') }}</div>
-			<div class="head-box-btn" v-if="state.newsList.length > 0" @click="onAllReadClick">{{ $t('message.user.newBtn') }}</div>
+			<div class="head-box-title">545454545</div>
+			<div class="head-box-btn" v-if="state.newsList.length > 0" @click="onAllReadClick"> 3232323 </div>
 		</div>
 		<div class="content-box">
 			<template v-if="state.newsList.length > 0">
@@ -14,9 +14,9 @@
 					<div class="content-box-time">{{ v.time }}</div>
 				</div>
 			</template>
-			<el-empty :description="$t('message.user.newDesc')" v-else></el-empty>
+			<el-empty :description="6565656" v-else></el-empty>
 		</div>
-		<div class="foot-box" @click="onGoToGiteeClick" v-if="state.newsList.length > 0">{{ $t('message.user.newGo') }}</div>
+		<div class="foot-box" @click="onGoToGiteeClick" v-if="state.newsList.length > 0"> 898989 </div>
 	</div>
 </template>
 
@@ -27,13 +27,8 @@ import { reactive } from 'vue';
 const state = reactive({
 	newsList: [
 		{
-			label: '关于版本发布的通知',
-			value: 'vue-next-admin，基于 vue3 + CompositionAPI + typescript + vite + element plus，正式发布时间：2021年02月28日！',
-			time: '2020-12-08',
-		},
-		{
-			label: '关于学习交流的通知',
-			value: 'QQ群号码 665452019，欢迎小伙伴入群学习交流探讨！',
+			label: '双碳',
+			value: '双碳',
 			time: '2020-12-08',
 		},
 	],

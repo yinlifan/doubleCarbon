@@ -27,7 +27,7 @@ const { isRequestRoutes } = themeConfig.value;
 
 /**
  * 创建一个可以被 Vue 应用程序使用的路由实例
- * @method createRouter(options: RouterOptions): Router
+ * @method createRouter (options: RouterOptions): Router
  * @link 参考：https://next.router.vuejs.org/zh/api/#createrouter
  */
 export const router = createRouter({

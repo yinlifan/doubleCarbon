@@ -52,7 +52,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 				name: 'home',
 				component: () => import('/@/views/home/index.vue'),
 				meta: {
-					title: 'message.router.home',
+					title: '首页',
 					isLink: '',
 					isHide: false,
 					isKeepAlive: true,
@@ -68,7 +68,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 				component: () => import('/@/layout/routerView/parent.vue'),
 				redirect: '/limits/frontEnd',
 				meta: {
-					title: 'message.router.limits',
+					title: '权限管理',
 					isLink: '',
 					isHide: false,
 					isKeepAlive: true,
@@ -84,7 +84,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 						component: () => import('/@/layout/routerView/parent.vue'),
 						redirect: '/limits/frontEnd/page',
 						meta: {
-							title: 'message.router.limitsFrontEnd',
+							title: '前端控制',
 							isLink: '',
 							isHide: false,
 							isKeepAlive: true,
@@ -99,7 +99,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								name: 'limitsFrontEndPage',
 								component: () => import('/@/views/limits/frontEnd/page/index.vue'),
 								meta: {
-									title: 'message.router.limitsFrontEndPage',
+									title: '页面控制',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -114,7 +114,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								name: 'limitsFrontEndBtn',
 								component: () => import('/@/views/limits/frontEnd/btn/index.vue'),
 								meta: {
-									title: 'message.router.limitsFrontEndBtn',
+									title: '按钮权限',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -131,7 +131,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 						name: 'limitsBackEnd',
 						component: () => import('/@/layout/routerView/parent.vue'),
 						meta: {
-							title: 'message.router.limitsBackEnd',
+							title: '后端控制',
 							isLink: '',
 							isHide: false,
 							isKeepAlive: true,
@@ -146,7 +146,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								name: 'limitsBackEndEndPage',
 								component: () => import('/@/views/limits/backEnd/page/index.vue'),
 								meta: {
-									title: 'message.router.limitsBackEndEndPage',
+									title: '页面权限',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -167,7 +167,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 				component: () => import('/@/layout/routerView/parent.vue'),
 				redirect: '/menu/menu1',
 				meta: {
-					title: 'message.router.menu',
+					title: '菜单嵌套',
 					isLink: '',
 					isHide: false,
 					isKeepAlive: true,
@@ -183,7 +183,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 						component: () => import('/@/layout/routerView/parent.vue'),
 						redirect: '/menu/menu1/menu11',
 						meta: {
-							title: 'message.router.menu1',
+							title: '菜单1',
 							isLink: '',
 							isHide: false,
 							isKeepAlive: true,
@@ -198,7 +198,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								name: 'menu11',
 								component: () => import('/@/views/menu/menu1/menu11/index.vue'),
 								meta: {
-									title: 'message.router.menu11',
+									title: '菜单11',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -214,7 +214,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								component: () => import('/@/layout/routerView/parent.vue'),
 								redirect: '/menu/menu1/menu12/menu121',
 								meta: {
-									title: 'message.router.menu12',
+									title: '菜单12',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -229,7 +229,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 										name: 'menu121',
 										component: () => import('/@/views/menu/menu1/menu12/menu121/index.vue'),
 										meta: {
-											title: 'message.router.menu121',
+											title: '菜单121',
 											isLink: '',
 											isHide: false,
 											isKeepAlive: true,
@@ -244,7 +244,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 										name: 'menu122',
 										component: () => import('/@/views/menu/menu1/menu12/menu122/index.vue'),
 										meta: {
-											title: 'message.router.menu122',
+											title: '菜单122',
 											isLink: '',
 											isHide: false,
 											isKeepAlive: true,
@@ -261,7 +261,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 								name: 'menu13',
 								component: () => import('/@/views/menu/menu1/menu13/index.vue'),
 								meta: {
-									title: 'message.router.menu13',
+									title: '菜单13',
 									isLink: '',
 									isHide: false,
 									isKeepAlive: true,
@@ -278,7 +278,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 						name: 'menu2',
 						component: () => import('/@/views/menu/menu2/index.vue'),
 						meta: {
-							title: 'message.router.menu2',
+							title: '菜单2',
 							isLink: '',
 							isHide: false,
 							isKeepAlive: true,
@@ -296,7 +296,7 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 				name: 'tools',
 				component: () => import('/@/views/tools/index.vue'),
 				meta: {
-					title: 'message.router.tools',
+					title: '工具类',
 					isLink: '',
 					isHide: false,
 					isKeepAlive: true,
