@@ -122,7 +122,7 @@ export default {
 	},
 	noAccess: {
 		accessTitle: '您未被授权，没有操作权限~',
-		accessMsg: '联系方式：加QQ群探讨 665452019',
+		accessMsg: '联系方式',
 		accessBtn: '重新授权',
 	},
 	layout: {
@@ -182,7 +182,7 @@ export default {
 	},
 	upgrade: {
 		title: '新版本升级',
-		msg: '新版本来啦，马上更新尝鲜吧！不用担心，更新很快的哦！',
+		msg: '新版本来啦',
 		desc: '提示：更新会还原默认配置',
 		btnOne: '残忍拒绝',
 		btnTwo: '马上更新',

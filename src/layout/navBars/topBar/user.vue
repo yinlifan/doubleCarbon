@@ -1,18 +1,20 @@
 <template>
 	<div class="layout-navbars-breadcrumb-user pr15" :style="{ flex: layoutUserFlexNum }">
-		<el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onComponentSizeChange">
+		<!-- 字体 -->
+		<!-- <el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onComponentSizeChange">
 			<div class="layout-navbars-breadcrumb-user-icon">
-				<i class="iconfont icon-ziti" :title="$t('message.user.title0')"></i>
+				<i class="iconfont icon-ziti" title="字体"></i>
 			</div>
 			<template #dropdown>
 				<el-dropdown-menu>
-					<el-dropdown-item command="large" :disabled="state.disabledSize === 'large'">{{ $t('message.user.dropdownLarge') }}</el-dropdown-item>
-					<el-dropdown-item command="default" :disabled="state.disabledSize === 'default'">{{ $t('message.user.dropdownDefault') }}</el-dropdown-item>
-					<el-dropdown-item command="small" :disabled="state.disabledSize === 'small'">{{ $t('message.user.dropdownSmall') }}</el-dropdown-item>
+					<el-dropdown-item command="large" :disabled="state.disabledSize === 'large'">大</el-dropdown-item>
+					<el-dropdown-item command="default" :disabled="state.disabledSize === 'default'">默</el-dropdown-item>
+					<el-dropdown-item command="small" :disabled="state.disabledSize === 'small'">小</el-dropdown-item>
 				</el-dropdown-menu>
 			</template>
-		</el-dropdown>
-		<el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onLanguageChange">
+		</el-dropdown> -->
+		<!-- 中英文 -->
+		<!-- <el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onLanguageChange">
 			<div class="layout-navbars-breadcrumb-user-icon">
 				<i
 					class="iconfont"
@@ -27,16 +29,19 @@
 					<el-dropdown-item command="zh-tw" :disabled="state.disabledI18n === 'zh-tw'">繁體中文</el-dropdown-item>
 				</el-dropdown-menu>
 			</template>
-		</el-dropdown>
-		<div class="layout-navbars-breadcrumb-user-icon" @click="onSearchClick">
+		</el-dropdown> -->
+		<!-- 搜索 -->
+		<!-- <div class="layout-navbars-breadcrumb-user-icon" @click="onSearchClick">
 			<el-icon :title="$t('message.user.title2')">
 				<ele-Search />
 			</el-icon>
-		</div>
-		<div class="layout-navbars-breadcrumb-user-icon" @click="onLayoutSetingClick">
+		</div> -->
+		<!-- 皮肤 -->
+		<!-- <div class="layout-navbars-breadcrumb-user-icon" @click="onLayoutSetingClick">
 			<i class="icon-skin iconfont" :title="$t('message.user.title3')"></i>
-		</div>
-		<div class="layout-navbars-breadcrumb-user-icon" ref="userNewsBadgeRef" v-click-outside="onUserNewsClick">
+		</div> -->
+		<!-- 提示 -->
+		<!-- <div class="layout-navbars-breadcrumb-user-icon" ref="userNewsBadgeRef" v-click-outside="onUserNewsClick">
 			<el-badge :is-dot="true">
 				<el-icon :title="$t('message.user.title4')">
 					<ele-Bell />
@@ -53,18 +58,20 @@
 			:width="300"
 			:persistent="false"
 		>
-			<UserNews />
-		</el-popover>
-		<div class="layout-navbars-breadcrumb-user-icon mr10" @click="onScreenfullClick">
+			<span>这里可以加入组件写内容</span>
+		</el-popover> -->
+		<!-- 全屏 -->
+		<!-- <div class="layout-navbars-breadcrumb-user-icon mr10" @click="onScreenfullClick">
 			<i
 				class="iconfont"
 				:title="state.isScreenfull ? $t('message.user.title6') : $t('message.user.title5')"
 				:class="!state.isScreenfull ? 'icon-fullscreen' : 'icon-tuichuquanping'"
 			></i>
-		</div>
+		</div> -->
+		<!-- 用户下拉 -->
 		<el-dropdown :show-timeout="70" :hide-timeout="50" @command="onHandleCommandClick">
 			<span class="layout-navbars-breadcrumb-user-link">
-				<img :src="userInfos.photo" class="layout-navbars-breadcrumb-user-link-photo mr5" />
+				<!-- <img :src="userInfos.photo" class="layout-navbars-breadcrumb-user-link-photo mr5" /> -->
 				{{ userInfos.userName === '' ? 'common' : userInfos.userName }}
 				<el-icon class="el-icon--right">
 					<ele-ArrowDown />

@@ -18,7 +18,7 @@
 				<span class="login-right-warp-one"></span>
 				<span class="login-right-warp-two"></span>
 				<div class="login-right-warp-mian">
-					<div class="login-right-warp-main-title">444 欢迎您！</div>
+					<div class="login-right-warp-main-title">444444444 欢迎您！</div>
 					<div class="login-right-warp-main-form">
 						<div v-if="!state.isScan">
 							<el-tabs v-model="state.tabsActiveName">
