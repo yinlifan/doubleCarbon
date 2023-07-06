@@ -62,6 +62,70 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 					icon: 'iconfont icon-shouye',
 				},
 			},
+			// 碳核算管理
+			{
+				path: '/carbonCalcManage',
+				name: 'carbonCalcManage',
+				component: () => import('/@/layout/routerView/parent.vue'),
+				redirect: '/modelManage/accountingModel',
+				meta: {
+					title: '碳核算管理',
+					isLink: '',
+					isHide: false,
+					isKeepAlive: true,
+					isAffix: false,
+					isIframe: false,
+					roles: ['admin', 'common'],
+					icon: 'iconfont icon-caidan',
+				},
+				children: [
+					{
+						path: '/carbonCalcManage/taskConfig',
+						name: 'taskConfig',
+						component: () => import('/@/views/carbonCalcManage/taskConfig/index.vue'),
+						meta: {
+							title: '任务配置',
+							isLink: '',
+							isHide: false,
+							isKeepAlive: true,
+							isAffix: false,
+							isIframe: false,
+							roles: ['admin', 'common'],
+							icon: 'iconfont icon-caidan',
+						},
+					},
+					{
+						path: '/carbonCalcManage/dataReport',
+						name: 'dataReport',
+						component: () => import('/@/views/carbonCalcManage/dataReport/index.vue'),
+						meta: {
+							title: '数据上报',
+							isLink: '',
+							isHide: false,
+							isKeepAlive: true,
+							isAffix: false,
+							isIframe: false,
+							roles: ['admin', 'common'],
+							icon: 'iconfont icon-caidan',
+						},
+					},
+					{
+						path: '/carbonCalcManage/CarbonEmissionLedger',
+						name: 'CarbonEmissionLedger',
+						component: () => import('/@/views/carbonCalcManage/CarbonEmissionLedger/index.vue'),
+						meta: {
+							title: '碳排台账',
+							isLink: '',
+							isHide: false,
+							isKeepAlive: true,
+							isAffix: false,
+							isIframe: false,
+							roles: ['admin', 'common'],
+							icon: 'iconfont icon-caidan',
+						},
+					},
+				],
+			},
 			// 模型管理
 			{
 				path: '/modelManage',
@@ -124,7 +188,6 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 							icon: 'iconfont icon-caidan',
 						},
 					},
-					
 				],
 			},
 			//权限管理
@@ -242,7 +305,6 @@ export const dynamicRoutes: Array<RouteRecordRaw> = [
 					icon: 'iconfont icon-gongju',
 				},
 			},
-			
 		],
 	},
 ];
@@ -291,5 +353,4 @@ export const staticRoutes: Array<RouteRecordRaw> = [
 	 * 提示：写在这里的为全屏界面，不建议写在这里
 	 * 请写在 `dynamicRoutes` 路由数组中
 	 */
-	
 ];
