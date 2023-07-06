@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<el-card>
+	<div class="layout-pd">
+		<el-card shadow="hover">
 			这里是首页
 			<div>
 				<VxeTem />
